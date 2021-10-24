@@ -4,11 +4,11 @@ import React, { useState } from 'react';
 import searchIcon from '../../assets/icon-search.svg';
 
 // eslint-disable-next-line react/prop-types
-export default function SearchBar({ isDarkMode }) {
+export default function SearchBar({ isDarkMode, setUserInput }) {
   const [searchInput, setSearchInput] = useState('');
 
   const submitHandler = () => {
-    console.log(searchInput);
+    setUserInput(searchInput);
   };
 
   return (
