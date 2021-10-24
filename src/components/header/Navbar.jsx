@@ -33,7 +33,7 @@ export default function Navbar({ setTheme, isDarkMode }) {
         >
           {isDarkMode ? 'Light' : 'Dark'}
         </h2>
-        <img src={isDarkMode ? sun : moon} alt="" />
+        <img src={isDarkMode ? sun : moon} alt={isDarkMode ? 'toggle sun' : 'toggle moon'} />
       </div>
     </nav>
   );
