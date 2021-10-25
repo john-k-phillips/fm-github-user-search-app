@@ -17,7 +17,12 @@ export default function ProfileCard({ userData }) {
         login={userData.login}
         joinedDate={userData.created_at}
       />
-      <ProfileStats bio={userData.bio} />
+      <ProfileStats
+        bio={userData.bio}
+        repos={userData.public_repos}
+        followers={userData.followers}
+        following={userData.following}
+      />
     </div>
 
   );
