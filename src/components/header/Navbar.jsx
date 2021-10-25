@@ -40,6 +40,6 @@ export default function Navbar({ setTheme, isDarkMode }) {
 }
 
 Navbar.propTypes = {
-  setTheme: PropTypes.func().isRequired,
+  setTheme: PropTypes.func.isRequired,
   isDarkMode: PropTypes.bool.isRequired,
 };
