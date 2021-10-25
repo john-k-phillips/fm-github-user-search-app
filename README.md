@@ -60,11 +60,13 @@ Your users should be able to:
 </p>
 <h3>What I Learnt</h3>
   <p>
-    This project was a fairly easy one so I didn't learn an awful lot from the project, it was fun regardless.
+    This was a big learning curve for me, I decided to dive back into using React and TailwindCSS.
+    I already knew the basics of React; however, practicing after such a long time was challenging and well worth the time spent on this project.
   </p>
 <h3>Continued Development</h3>
   <p>
-    I'm happy with the results of this project and will likely not return!
+    The intention of this project was the code; which, I'm happy and accomplished it my goal. Despite this, the TailwindCSS (design aspect) suffered slightly.
+  I hope to come back to this project and redo the design; potentially with CSS to have full control over each element.
   </p>
   
 <!--  Thank you for taking the time to review my projects!  -->
