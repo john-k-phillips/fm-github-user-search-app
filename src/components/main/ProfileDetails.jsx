@@ -10,9 +10,22 @@ export default function ProfileDetails({
     <div className="flex items-center">
       <img className="w-3/12 rounded-full" src={avatar} alt="" />
       <div className="flex flex-col ml-4">
-        <h2 className="text-black">{name}</h2>
+        <h2
+          className="
+          text-custom-black-lighter font-bold
+            dark:text-white"
+        >
+          {name}
+
+        </h2>
         <span className="text-custom-blue">{login !== undefined ? `@${login.toLowerCase()}` : '' }</span>
-        <span className="text-black">{`Joined ${newDate}`}</span>
+        <span
+          className="
+          text-custom-grayish-blue-lighter
+          dark:text-custom-white-lighter"
+        >
+          {`Joined ${newDate}`}
+        </span>
       </div>
     </div>
   );
