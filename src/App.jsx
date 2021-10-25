@@ -21,7 +21,7 @@ export default function App() {
     <div className={isDarkMode ? 'dark' : 'light'}>
       <Navbar isDarkMode={isDarkMode} setTheme={setIsDarkMode} />
       <SearchBar isDarkMode={isDarkMode} setUserInput={setUserInput} />
-      {userData.message === 'Not Found' ? '' : <ProfileCard userData={userData} />}
+      {userData.message === 'Not Found' ? '' : <ProfileCard userData={userData} isDarkMode={isDarkMode} />}
     </div>
   );
 }
