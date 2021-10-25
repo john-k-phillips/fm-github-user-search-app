@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import ProfileDetails from './ProfileDetails';
 import ProfileStats from './ProfileStats';
 
-export default function ProfileCard({ userData }) {
+export default function ProfileCard({ userData, isDarkMode }) {
   return (
     <div
       className="
@@ -22,6 +22,11 @@ export default function ProfileCard({ userData }) {
         repos={userData.public_repos}
         followers={userData.followers}
         following={userData.following}
+        location={userData.location}
+        twitter={userData.twitter_username}
+        blog={userData.blog}
+        company={userData.company}
+        isDarkMode={isDarkMode}
       />
     </div>
 
@@ -31,4 +36,5 @@ export default function ProfileCard({ userData }) {
 ProfileCard.propTypes = {
   // eslint-disable-next-line react/forbid-prop-types
   userData: PropTypes.object.isRequired,
+  isDarkMode: PropTypes.bool.isRequired,
 };
