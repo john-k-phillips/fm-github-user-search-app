@@ -1,5 +1,5 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default function ProfileDetails({
   avatar, name, login, joinedDate,
@@ -30,3 +30,10 @@ export default function ProfileDetails({
     </div>
   );
 }
+
+ProfileDetails.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  login: PropTypes.string.isRequired,
+  joinedDate: PropTypes.string.isRequired,
+};

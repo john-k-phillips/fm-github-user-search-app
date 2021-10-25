@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
-/* eslint-disable no-unused-vars */
 import React from 'react';
+import PropTypes from 'prop-types';
+
 import ProfileDetails from './ProfileDetails';
 
 export default function ProfileCard({ userData }) {
@@ -20,3 +20,8 @@ export default function ProfileCard({ userData }) {
 
   );
 }
+
+ProfileCard.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
+  userData: PropTypes.object.isRequired,
+};

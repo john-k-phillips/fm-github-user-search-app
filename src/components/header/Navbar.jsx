@@ -1,9 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import moon from '../../assets/icon-moon.svg';
 import sun from '../../assets/icon-sun.svg';
 
-// eslint-disable-next-line react/prop-types
 export default function Navbar({ setTheme, isDarkMode }) {
   const toggleTheme = () => {
     setTheme(!isDarkMode);
@@ -38,3 +38,8 @@ export default function Navbar({ setTheme, isDarkMode }) {
     </nav>
   );
 }
+
+Navbar.propTypes = {
+  setTheme: PropTypes.func().isRequired,
+  isDarkMode: PropTypes.bool.isRequired,
+};
