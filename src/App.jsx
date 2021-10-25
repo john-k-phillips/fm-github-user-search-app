@@ -16,6 +16,10 @@ export default function App() {
   }, [userInput]);
 
   document.body.style.backgroundColor = isDarkMode ? '#141D2F' : '#F6F8FF';
+  document.body.style.height = '100vh';
+  document.body.style.height = '100vh';
+  document.body.style.display = 'grid';
+  document.body.style.placeItems = 'center';
 
   return (
     <div className={isDarkMode ? 'dark' : 'light'}>

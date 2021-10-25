@@ -13,16 +13,25 @@ export default function ProfileDetails({
         <h2
           className="
           text-custom-black-lighter font-bold
-            dark:text-white"
+            dark:text-white
+            md:text-2xl md:ml-6"
         >
           {name}
 
         </h2>
-        <span className="text-custom-blue">{login !== undefined ? `@${login.toLowerCase()}` : '' }</span>
+        <span
+          className="
+          text-custom-blue
+          md:ml-6 text-xl"
+        >
+          {login !== undefined ? `@${login.toLowerCase()}` : '' }
+
+        </span>
         <span
           className="
           text-custom-grayish-blue-lighter
-          dark:text-custom-white-lighter"
+          dark:text-custom-white-lighter
+            md:text-lg ml-6"
         >
           {`Joined ${newDate}`}
         </span>

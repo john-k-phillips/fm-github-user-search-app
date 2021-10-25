@@ -6,7 +6,8 @@ export default function InfoComponent({ image, info, extraPadding }) {
     <div
       className="
       flex items-center justify-left text-custom-grayish-blue-lighter
-      dark:text-custom-white-lighter"
+      dark:text-custom-white-lighter
+      md:w-5/12 md:text-lg"
     >
       {image}
       <p

@@ -9,7 +9,9 @@ export default function ProfileCard({ userData, isDarkMode }) {
     <div
       className="
       w-10/12 m-auto mt-5 p-5 rounded-xl bg-white shadow-lg text-white
-      dark:bg-custom-grayish-blue-darker"
+      dark:bg-custom-grayish-blue-darker
+      md:p-10
+      lg:w-full"
     >
       <ProfileDetails
         avatar={userData.avatar_url}

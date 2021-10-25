@@ -18,14 +18,15 @@ export default function ProfileStats({
       <p
         className="
         text-custom-gray-lighter mt-8
-        dark:text-custom-white-lighter"
+        dark:text-custom-white-lighter
+         md:text-lg"
       >
         {bio}
 
       </p>
       <div
         className="
-        rounded-xl bg-custom-grayish-white-lighter p-6 mt-5 text-custom-black-lighter flex justify-between gap-5
+        rounded-xl bg-custom-grayish-white-lighter p-6 mt-5 text-custom-black-lighter flex justify-around gap-5
         dark:bg-custom-black-darker dark:text-white"
       >
         <StatsCard title="Repos" repos={repos} />
@@ -33,7 +34,9 @@ export default function ProfileStats({
         <StatsCard title="Following" following={following} />
       </div>
       <div
-        className="flex flex-col gap-2 mt-5 pb-5"
+        className="
+        flex flex-col gap-2 mt-5 pb-5
+        md:flex-row md:w-full md:flex-wrap md:gap-5"
       >
         <InfoComponent image={<LocationIcon fill={isDarkMode ? 'white' : '#4b6a9b'} />} info={location} extraPadding />
         <InfoComponent image={<WebsiteIcon fill={isDarkMode ? 'white' : '#4b6a9b'} />} info={blog} />

@@ -21,14 +21,14 @@ export default function StatsCard({
   }
   return (
     <div className="flex flex-col justify-center text-center text-xs gap-1">
-      <p>{title}</p>
+      <p className="md:text-lg">{title}</p>
       <span
         className="
         font-bold text-xl
-        dark:text-custom-grayish-white-lighter"
+        dark:text-custom-grayish-white-lighter
+        md:text-4xl"
       >
         {valueElement}
-
       </span>
     </div>
   );
