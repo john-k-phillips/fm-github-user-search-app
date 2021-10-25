@@ -32,8 +32,15 @@ export default function ProfileDetails({
 }
 
 ProfileDetails.propTypes = {
-  avatar: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  login: PropTypes.string.isRequired,
-  joinedDate: PropTypes.string.isRequired,
+  avatar: PropTypes.string,
+  name: PropTypes.string,
+  login: PropTypes.string,
+  joinedDate: PropTypes.string,
+};
+
+ProfileDetails.defaultProps = {
+  avatar: '',
+  name: '',
+  login: '',
+  joinedDate: '',
 };
