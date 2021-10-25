@@ -11,10 +11,10 @@
 </p>
 
 <!-- REPLACE HREFS -->
-<a href="https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6" target="_blank">
+<a href="https://www.frontendmentor.io/solutions/github-user-search-app-with-react-and-tailwindcss-02keFWlBf" target="_blank">
   <img src=https://img.shields.io/badge/solution-3e54a3?&style=for-the-badge&logo=frontendmentor&logoColor=white alt=github style="margin-bottom: 5px;" />
 </a>
-<a href="https://loving-ptolemy-e48053.netlify.app/" target="_blank">
+<a href="https://condescending-albattani-f59691.netlify.app/" target="_blank">
   <img src=https://img.shields.io/badge/live%20demo-lightgreen?&style=for-the-badge&logo=html5&logoColor=333 alt=live-link style="margin-bottom: 5px;" />
 </a>
 
