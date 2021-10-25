@@ -12,7 +12,7 @@ export default function InfoComponent({ image, info, extraPadding }) {
       <p
         className={`ml-4 ${extraPadding ? 'ml-5' : ''}`}
       >
-        {info === null ? 'Not Available' : info}
+        {info === null || '' ? 'Not Available' : info}
       </p>
     </div>
   );
@@ -26,5 +26,5 @@ InfoComponent.propTypes = {
 
 InfoComponent.defaultProps = {
   extraPadding: false,
-  info: 'Not Available',
+  info: '',
 };
