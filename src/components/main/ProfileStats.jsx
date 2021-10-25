@@ -7,7 +7,14 @@ export default function ProfileStats({
 }) {
   return (
     <div>
-      <p className="text-custom-gray-lighter mt-8">{bio}</p>
+      <p
+        className="
+        text-custom-gray-lighter mt-8
+        dark:text-custom-white-lighter"
+      >
+        {bio}
+
+      </p>
       <div
         className="
         rounded-xl bg-custom-grayish-white-lighter p-6 mt-5 text-custom-black-lighter flex justify-between gap-5
@@ -16,6 +23,9 @@ export default function ProfileStats({
         <StatsCard title="Repos" repos={repos} />
         <StatsCard title="Followers" followers={followers} />
         <StatsCard title="Following" following={following} />
+      </div>
+      <div>
+        {/* Extra Info */}
       </div>
     </div>
   );
