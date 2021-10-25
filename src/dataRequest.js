@@ -3,6 +3,7 @@ const sendRequest = (username, setUserData) => {
   fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
+      // eslint-disable-next-line
       console.log(data);
       setUserData(data);
     });

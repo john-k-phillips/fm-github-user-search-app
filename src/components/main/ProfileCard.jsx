@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import ProfileDetails from './ProfileDetails';
+import ProfileStats from './ProfileStats';
 
 export default function ProfileCard({ userData }) {
   return (
@@ -15,6 +16,12 @@ export default function ProfileCard({ userData }) {
         name={userData.name}
         login={userData.login}
         joinedDate={userData.created_at}
+      />
+      <ProfileStats
+        bio={userData.bio}
+        repos={userData.public_repos}
+        followers={userData.followers}
+        following={userData.following}
       />
     </div>
 
